@@ -1,0 +1,102 @@
+在第二节课中我认为授课的重点是：
+
+1.github 的基本操作
+2.人为何为人
+3.js变量的声明和定义
+
+1.github 的基本操作 
+基本操作
+
+	* 从Github上克隆一个项目仓库到本地项目仓库：git clone url，注意，这里的 url，是指前面某处提到的 https 的 url，而不是让你输入 url 这三个字。
+	* 修改项目。
+	* 添加修改到本地仓库的缓存区域：git add -A。
+	* 把缓存区域的修改提交到本地仓库：git commit -m "some logo"。
+	* 将本地仓库的提交推送到远程仓库：git push origin master。
+	* （可能还需要登录）
+
+2.人为何为人（一切以命名开始）
+   人之所是人，其实都是有【数据】区别的。
+   小明——数据库（身高体重，长相，音色等）——   O(∩_∩)O
+
+3.js变量的声明和定义 
+
+js的变量声明和java不同之处：
+js变量统一以var开始；
+java的变量分很多——浮点型，整型，字符型，double型等。
+
+总之，js对变量的声明和定义更方便。
+
+var i  ;                声明                   var  a ;
+i =0                    定义                  a = "Hello World"
+                                                   a = 'Hello World' （js中单双引号一样，尽量用双引号）
+在这个过程中，计算机内部发生了巨大变化。
+
+
+
+【补充】 终端运用代码
+
+【运行步骤】
+cd my_porject
+*  1. 终端进入到  cd getting-started-with-javascript/study/lesson2
+*  2. > node sample_code.js
+
+
+
+
+
+变量之间的操作
+>node sample_code.js
+
+
+运行查看结果
+>node sample_code.js
+(node 给我启一个环境，送代码给你运行)
+
+
+
+
+
+js基础用法
+规定 HTML 文档的字符编码： <meta charset="UTF-8">
+HTML 中的脚本必须位于 <script> 与 </script> 标签之间。
+脚本可被放置在 HTML 页面的 <body> 和 <head> 部分中，
+输出
+console.log('姓名');
+JS的注释：      JS单行注释是用//，多行注释以 /* 开始，以 */ 结尾。
+<script> 
+alert("我的JS练习");//是弹出对话框
+/*js文档是以<script>开头      以</script>结束*/ </script>
+JS的输出：alert() 弹出对话框；
+使用 document.write() 方法将内容写到 HTML 文档中；
+JS的变量：
+var是JS中的通用类型变量，可以随便存储其它类型的值，可以直接使用，不用定义。
+var name;     name 为变量名，
+可以有字母，数字 ，下划线组成，但不能用数字 开头，不区分 大小写
+数字类型：
+int :整数型
+tring;字符型
+double;双精度
+flout;单精度
+oolen;布尔型
+attr=array()数姐
+类型的转换：
+将其他类型转换成整数型：parseint()
+将其他 类型转换成小数型：parsefloat()
+判断是否是一个合法的数字类型：isNaN()
+运算符：
+数学运算符有：+, - ,* ,/,%,++,--
+关系运算符有：==   ！=    =>   =<
+逻辑运算符有：&& （并）  ||（与）  ！（非）
+给定 x=6 以及 y=3，下表解释了逻辑运算符：
+(x < 10 && y > 1) 为 true//两个条件同时满足为 true，有一个不满足为 false
+(x==5 || y==5) 为 false//两个条件有一个满足为 true，都不满足为 false
+!(x==y) 为 true//如果不满足为 true，满足为 false
+运算符 = 用于赋值。
+运算符 + 用于加值。
+y=5; z=2; x=y+z
+在以上语句执行后，x 的值是：7
+两个数字相加，返回数字相加的和，如果数字与字符串相加，
+x=5+5; y="5"+5; z="Hello"+5
+x,y, 和 z 输出结果为:
+10 55 Hello5//如果数字与字符串相加,返回的是字符串
+ 
